@@ -24,3 +24,22 @@ To run this dokcer-compose template please folloiwng the instruction following
   ```
   docker-compose up -d
   ```
+
+  3.  Install requirements.txt by following command
+
+  ```
+  pip install -r requirements.txt
+  ```
+
+  4.  Get in docker container by following command
+
+  ```
+  docker-compose exec ecommerce_api /bin/bash
+  ```
+
+  5.  Make migrations and migrate the django models by following command
+
+  ```
+  python manage.py makemigrations
+  python manage.py migrate
+  ```
