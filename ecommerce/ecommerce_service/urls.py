@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from product_management.views import ProductAllView, ProductByIdView, SummarizeView
 from order_management.views import OrderView
-from user_management.views import UserView
+from user_management.views import UserView, UserProfileView, RegisterView, LoginView
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/register/', RegisterView.as_view(), name='register'),
+    path('api/login/', LoginView.as_view(), name='login'),
+    path('api/profile/', UserProfileView.as_view(), name='profile'),
     path("api/userinfo/<str:username>", UserView.as_view(), name="userinfo"),
     path('api/product/all', ProductAllView.as_view(), name='product_all'),
     path('api/product/byId/<int:product_id>', ProductByIdView.as_view(), name='product_byid'),

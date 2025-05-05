@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from product_management.models import Product
 # Create your models here.
 
@@ -13,6 +13,10 @@ from product_management.models import Product
 
 class User(models.Model):
     username = models.CharField(max_length=150, unique=True)
+    password = models.CharField(('password'), max_length=128)
     email = models.EmailField(unique=True)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    phone_number = models.CharField(max_length=10)
     created_at = models.DateTimeField(auto_now_add=True)
     wishlist = models.ManyToManyField(Product, blank=True, related_name='wishlisted_by')
