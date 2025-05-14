@@ -40,10 +40,11 @@ if DEBUG:
 else:
     # In production, use specific origins
     default_origins = [
-        f"https://{RENDER_EXTERNAL_HOSTNAME}",
-        "https://ecoreachdb-frontend.onrender.com",  # Add your frontend URL here
+        f"https://{RENDER_EXTERNAL_HOSTNAME}" if RENDER_EXTERNAL_HOSTNAME else None,
+        "https://ecoreachdb-frontend.onrender.com",
     ]
-    # Add any additional origins from environment variable
+    # Remove None values and add any additional origins from environment variable
+    default_origins = [origin for origin in default_origins if origin]
     extra_origins = [origin.strip() for origin in os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',') if origin.strip()]
     CORS_ALLOWED_ORIGINS = default_origins + extra_origins
 

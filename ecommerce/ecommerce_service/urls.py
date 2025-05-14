@@ -16,15 +16,30 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import JsonResponse
 from product_management.views import ProductAllView, ProductByIdView, SummarizeView
 from rest_framework.routers import DefaultRouter
 from order_management.views import OrderViewSet, OrderProductDetails
 from user_management.views import CustomerUserView, CustomerUserProfileView, RegisterView, LoginView, AddToWishlistView, RemoveFromWishlistView, WishlistView
 
+def api_root(request):
+    return JsonResponse({
+        'status': 'API is running',
+        'available_endpoints': {
+            'products': '/api/product/all',
+            'product_by_id': '/api/product/byId/<id>',
+            'login': '/api/login/',
+            'register': '/api/register/',
+            'wishlist': '/wishlist/',
+            'orders': '/api/orders/',
+        }
+    })
+
 router = DefaultRouter()
 router.register(r'orders', OrderViewSet, basename='order')
 
 urlpatterns = [
+    path('', api_root, name='api-root'),  # Root route
     path('admin/', admin.site.urls),
     path('api/register/', RegisterView.as_view(), name='register'),
     path('api/login/', LoginView.as_view(), name='login'),
