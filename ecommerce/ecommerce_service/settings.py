@@ -41,7 +41,7 @@ else:
     # In production, use specific origins
     default_origins = [
         f"https://{RENDER_EXTERNAL_HOSTNAME}",
-        "https://ecoreachapp.onrender.com",  # Add your frontend URL here
+        "https://ecoreachdb-frontend.onrender.com",  # Add your frontend URL here
     ]
     # Add any additional origins from environment variable
     extra_origins = [origin.strip() for origin in os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',') if origin.strip()]
