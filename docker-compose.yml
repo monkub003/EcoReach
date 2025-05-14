@@ -13,6 +13,23 @@ services:
     command: python manage.py runserver 0.0.0.0:8888
     volumes:
       - ./ecommerce:/code
-      - ./data/sqlite:/code/data
     ports:
       - "3344:8888"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/ecoreachdb
+
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=ecoreachdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
