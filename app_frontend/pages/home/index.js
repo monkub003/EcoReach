@@ -148,7 +148,7 @@ export default function HomePage() {
 
   return (
     <>
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen text-gray-800">
       <Head>
         <title>EcoReach Home</title>
         <meta charSet="UTF-8" />
