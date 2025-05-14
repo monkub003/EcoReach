@@ -56,7 +56,7 @@ export function useAuth() {
     if (!isLoggedIn) return null;
     try {
       const token = getToken();
-      const response = await fetch('https://ecoreachdb-frontend.onrender.com/api/profile', {
+      const response = await fetch('https://ecoreachdb-api.onrender.com/api/profile', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ export function useAuth() {
     setCartLoading(true);
     try {
       const token = getToken();
-      const response = await fetch('https://ecoreachdb-frontend.onrender.com/api/carts/current/', {
+      const response = await fetch('https://ecoreachdb-api.onrender.com/api/carts/current/', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -118,7 +118,7 @@ export function useAuth() {
     
     try {
       const token = getToken();
-      const response = await fetch('https://ecoreachdb-frontend.onrender.com/api/carts/add_item/', {
+      const response = await fetch('https://ecoreachdb-api.onrender.com/api/carts/add_item/', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -149,7 +149,7 @@ export function useAuth() {
     
     try {
       const token = getToken();
-      const response = await fetch('https://ecoreachdb-frontend.onrender.com/api/carts/remove_item/', {
+      const response = await fetch('https://ecoreachdb-api.onrender.com/api/carts/remove_item/', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -180,7 +180,7 @@ export function useAuth() {
     
     try {
       const token = getToken();
-      const response = await fetch('https://ecoreachdb-frontend.onrender.com/api/carts/update_quantity/', {
+      const response = await fetch('https://ecoreachdb-api.onrender.com/api/carts/update_quantity/', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

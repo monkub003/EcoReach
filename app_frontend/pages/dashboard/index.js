@@ -38,7 +38,7 @@ export default function Dashboard() {
     const fetchDashboardData = async () => {
       try {
         // Fetch summary data
-        const summaryResponse = await fetch('https://ecoreachdb-frontend.onrender.com/api/summarize');
+        const summaryResponse = await fetch('https://ecoreachdb-api.onrender.com/api/summarize');
         const summaryData = await summaryResponse.json();
         
         // Calculate total eco points and revenue (example, you may need to adjust)
@@ -53,7 +53,7 @@ export default function Dashboard() {
         
         for (let i = startOrderId; i > Math.max(startOrderId - numberOfOrdersToFetch, 0); i--) {
           try {
-            const orderResponse = await fetch(`https://ecoreachdb-frontend.onrender.com/orders/products/${i}`);
+            const orderResponse = await fetch(`https://ecoreachdb-api.onrender.com/orders/products/${i}`);
             if (orderResponse.ok) {
               const orderData = await orderResponse.json();
               
