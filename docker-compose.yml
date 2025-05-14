@@ -1,0 +1,18 @@
+services:
+  front_end:
+    build: ./app_frontend
+    command: npm run dev
+    volumes:
+      - ./app_frontend:/app
+      - /app/node_modules
+    ports:
+      - "3343:3000"
+  
+  ecommerce_api:
+    build: ./ecommerce
+    command: python manage.py runserver 0.0.0.0:8888
+    volumes:
+      - ./ecommerce:/code
+      - ./data/sqlite:/code/data
+    ports:
+      - "3344:8888"
