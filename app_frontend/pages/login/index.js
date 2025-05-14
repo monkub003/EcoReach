@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import config from '../../config';
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ export default function Login() {
     formDataObj.append('password', formData.password);
 
     try {
-      const response = await fetch('http://127.0.0.1:3344/api/login/', {
+      const response = await fetch(`${config.apiBaseUrl}/api/login/`, {
         method: 'POST',
         body: formDataObj,
       });

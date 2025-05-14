@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
 import { CartContext } from '@/context/CartContext';
+import config from '../../../config';
 
 export default function ProductInfo() {
   const router = useRouter();
@@ -38,7 +39,7 @@ export default function ProductInfo() {
     
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:3344/api/product/byId/${product_id}`);
+        const response = await fetch(`${config.apiBaseUrl}/api/product/byId/${product_id}`);
         
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.status}`);
@@ -78,7 +79,7 @@ const checkWishlistStatus = async (productId) => {
     }
     
     // Fetch the user's wishlist from your API
-    const response = await fetch('http://localhost:3344/wishlist/', {
+    const response = await fetch(`${config.apiBaseUrl}/wishlist/`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -150,8 +151,8 @@ const checkWishlistStatus = async (productId) => {
     try {
       const token = localStorage.getItem('jwt_access');
       const url = isFavorite 
-        ? `http://localhost:3344/wishlist/remove/${product_id}/`
-        : `http://localhost:3344/wishlist/add/${product_id}/`;
+        ? `${config.apiBaseUrl}/wishlist/remove/${product_id}/`
+        : `${config.apiBaseUrl}/wishlist/add/${product_id}/`;
       
       const response = await fetch(url, {
         method: 'POST',
