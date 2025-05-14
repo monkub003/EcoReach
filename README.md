@@ -1,4 +1,4 @@
-# TU-PINE Software Engineering CN334 Project.
+# EcoReach
 
 This is project for CN334 Web Application Development.
 
