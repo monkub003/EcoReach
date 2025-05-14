@@ -84,7 +84,7 @@ export default function Wishlist() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 text-gray-800">
       {/* Header */}
       <Head>
         <title>Wishlist - EcoReach</title>

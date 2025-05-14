@@ -244,24 +244,24 @@ export default function HomePage() {
               ALL
             </button>
             <button
-              onClick={() => filterProducts('Eco Tableware')}
+              onClick={() => filterProducts('One-Time Eco')}
               className={`px-4 py-1 rounded text-sm ${
                 activeTab === 'Eco Tableware'
                   ? 'bg-green-900 text-white'
                   : 'bg-white text-green-900 border border-green-900'
               }`}
             >
-              Eco Tableware
+              One-Time Eco
             </button>
             <button
-              onClick={() => filterProducts('Sustainable Bags')}
+              onClick={() => filterProducts('Long-Life Eco')}
               className={`px-4 py-1 rounded text-sm ${
                 activeTab === 'Sustainable Bags'
                   ? 'bg-green-900 text-white'
                   : 'bg-white text-green-900 border border-green-900'
               }`}
             >
-              Sustainable Bags
+              Long-Life Eco
             </button>
           </div>
         </nav>

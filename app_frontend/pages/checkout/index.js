@@ -112,7 +112,7 @@ export default function CheckoutForm() {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen text-gray-800">
       <Head>
         <title>Checkout - EcoReach</title>
       </Head>

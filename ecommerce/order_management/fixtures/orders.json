@@ -1,0 +1,25 @@
+[
+{
+  "model": "order_management.order",
+  "pk": 11,
+  "fields": {
+    "user": null,
+    "email": "monkung@domain.com",
+    "first_name": "Mon",
+    "last_name": "Kung",
+    "phone_number": "08012345678",
+    "address": "Jpark",
+    "province": "Pathumthani",
+    "district": "Chiangrak",
+    "sub_district": "Jpark highway",
+    "postal_code": "12120",
+    "note": "First Order ja",
+    "total_amount": "12364.00",
+    "status": "pending",
+    "shipping_method": "sd",
+    "payment_method": "cod",
+    "created_at": "2025-05-14T14:39:34.329Z",
+    "updated_at": "2025-05-14T14:39:34.344Z"
+  }
+}
+]

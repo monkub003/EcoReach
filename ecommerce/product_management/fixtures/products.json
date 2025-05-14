@@ -1,0 +1,206 @@
+[
+    {
+        "model": "product_management.product",
+        "pk": "1",
+        "fields": {
+            "product_name": "Eco Cotton Tote Bag",
+            "price": "80.00",
+            "stock": 150,
+            "category": "Long-Life Eco",
+            "is_new_release": true,
+            "is_trending": true,
+            "rating": "4",
+            "description": "Stylish eco-friendly cotton tote bag",
+            "detail": "Made from 100% organic cotton, durable and washable for everyday use",
+            "eco_point": "100",
+            "img_url": "https://media-hosting.imagekit.io/d571da0a313a4612/Eco%20Cotton%20Tote%20Bag.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UUah9Ai2sje8h5jMmwj5CdRJlIjEOCMRphl8cULohPIg014FRaCoyARjXw2VqKcuVu2eWoS07k2dBiFxHu3~eEku15Z6D5C19u9ubUY6069g3m~offFnOUQw-pcXCJw3icsxIOMGRfsV~BcqyY4SewbdyLWBETKAPYv0pWcW9WrPAbIO8E13UKefRWIrEpXMprZMDiFs4ZJTT22QPmELmARkMr-1bSCBwk5CDtc5RnCBeRfce~vbUG8KXwZYzsizzGjsAnQDe6zNLfWW8F6Y8RKttJU1VXR-1qaEVXOG5rekh9T~put7Pg6b3XZc6yvyn5xfYBbtSj~8Za9vMrHy0g__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "2",
+        "fields": {
+            "product_name": "Foldable Mesh Market Bag",
+            "price": "50.00",
+            "stock": 200,
+            "category": "Long-Life Eco",
+            "is_new_release": false,
+            "is_trending": true,
+            "rating": "4",
+            "description": "Lightweight foldable mesh bag for shopping",
+            "detail": "Mesh construction allows breathability; folds into a compact pouch",
+            "eco_point": "100",
+            "img_url": "https://media-hosting.imagekit.io/0084ee43f08c4368/Foldable%20Mesh%20Market%20Bag.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=XwtHlVbTlbnkY5BQIFO1UyDMbV3d9DhB-nlg3DFz7zElTvJbDD1DFlFTtAoOQZ94BMKzkOwGQ09aw1s1zzBn3rQFlLrniYXx3vgPUG6loYVMjFnIxzA6ZJmvHk9bR4~ZKfPYBoaS-S~ol-9LqpVLn4mIDxUYXzQL6S5x9BeSSraMubNunFByvWjb8i6wz-RTB7XwHQcqEJKpyPkWs9RhQc12sGDcrNhrytpowDCeNASuzmqs5JGMgTxlXPcR4O49Z0r191ll~zPPLwYJOg~pdLnjR4nWoTpcfiRyTzCO76h09tk3GiejaqiXczD2BZmRaxFTdfSkaVfJ40KpEKBgHg__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "3",
+        "fields": {
+            "product_name": "Compostable Paper Plate (Set of 10)",
+            "price": "30.00",
+            "stock": 300,
+            "category": "One-Time Eco",
+            "is_new_release": true,
+            "is_trending": false,
+            "rating": "3",
+            "description": "Disposable plates made from compostable paper",
+            "detail": "Set of 10 sturdy plates; fully compostable within 90 days",
+            "eco_point": "10",
+            "img_url": "https://media-hosting.imagekit.io/15c082ffb2e04379/Compostable%20Paper%20Plate.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PkSF4sAOtAYppZf9JFZtyn1tsjnBo0ZGLwr0bkw9NAor5LzoBFqgLTA8j-dYSl6A4KaiwOkuJkQ2R6~hnMSC8wxQL4rQkLAhS0LW3X6dzBBVy~sVcoA5HwzV2p9eIjLWwTu1X186DibL-JJbB2htUFXaJ29USBkWyzWncwZ2MgA19c-6S8IblMuqAENWuaNnhPFH8va1vBiONvPeOdqsuviSS5-X1rRxhncuMmTnZOep03~w6V60o03ZwKzAg9YHOx5mP3dey3PnzHSs92ULX9PGpBkWlnw2T5bgkiiBI2A6VXjMntjRLr2I~S5Wa0JIQk8HLQRu2WWI-rVeVBkJaw__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "4",
+        "fields": {
+            "product_name": "Biodegradable Paper Bowl (Set of 10)",
+            "price": "30.00",
+            "stock": 280,
+            "category": "One-Time Eco",
+            "is_new_release": false,
+            "is_trending": true,
+            "rating": "4",
+            "description": "Eco-friendly bowls for hot or cold foods",
+            "detail": "Pack of 10 bowls; leak-resistant and biodegradable",
+            "eco_point": "10",
+            "img_url": "https://media-hosting.imagekit.io/1416d3f76f014063/Biodegradable%20Paper%20Bowl.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zqxQAFIBqvhVEynQhuzE-S0TJnhfxmF~pnZz3fPKjZU5cIM9GcM-lfXE9MAoFPOQUxuScMyuCRW4SNsztCwen0RDBr0-jo8uh~yeLc-rMnUjeGjIm7GDS8rqz7gO~ZM90dMyNb6KfaQ4bZN7CWcMV96KyHNEHUeLNq0i9wLkDaMnWHiC0hzEwZc7c4NckLXiuKMEePkiI95gmoFjHRqUFQ3AYje4udpGaqwPxSsEXbHZpuAAZvZc6m4RP1yFNmMVh9Whmw75XpNRmUG2db1QZoSzWZgPhpV81jByjLgO5AE2phcL~Bd5-cE79KogpUOsLQ9L2yOESbZ6Cj85a1F95g__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "5",
+        "fields": {
+            "product_name": "Wheat Fiber Lunch Box",
+            "price": "150.00",
+            "stock": 120,
+            "category": "Long-Life Eco",
+            "is_new_release": true,
+            "is_trending": true,
+            "rating": "5",
+            "description": "Durable lunch box made from wheat straw fiber",
+            "detail": "Microwave-safe, BPA-free, and eco-friendly material",
+            "eco_point": "100",
+            "img_url": "https://media-hosting.imagekit.io/c121655a4cfa4150/Wheat%20Fiber%20Lunch%20Box.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=sb6qkpj3hjXUbWxFGqK95q2qaoBbz-USNQjlhfeqY0CO67pI8YWL0MJkB900SRoHyXPMB4l2riOxihlsWfCC74TdmPRvhKOGzrKSZc5Ofe7n7GHTgCxaJbprNaW9b35vZVaIGHfmhBI5jWaEFBAhogDqq4eic8juJCgioXXddA5UOeRUXrrRECte0JlTdhGgPZCZeK-teW~tjw2rIeLhGY-xDzoiInsCU-c0WqIK0sreRvM7aNzxQQzgBGpF0enhSUU2j5kpWWRjD8SEvcTH46e~VRqVIHE1TlRblGzungmjQywjyg9FUoBXt4LrsEpo~FVfOVxqwb23emqisCrtRw__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "6",
+        "fields": {
+            "product_name": "Wooden Spoon & Fork Set",
+            "price": "40.00",
+            "stock": 180,
+            "category": "Long-Life Eco",
+            "is_new_release": false,
+            "is_trending": false,
+            "rating": "4",
+            "description": "Reusable wooden cutlery set",
+            "detail": "Set includes spoon and fork made from sustainably sourced wood",
+            "eco_point": "100",
+            "img_url": "https://media-hosting.imagekit.io/f06e034ad5b34bee/Wooden%20Spoon%20&%20Fork%20Set.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OBYI0h3OHaPNl-WuDBpMV2nImyuqQ3is-aBcSma3D-7NR5gyQNz8uebvm6gUkdfZwa9dv2LrDkTFhk705VTVKOiBquXab86vjYQy024o9HuKu2rTelKCYaLUrMyndPYG3w9fGHqyCE2HRgQnJfVTUhSkm~iW80OM~YfX56v3Ldpr4IG7KqumJxxzb5crDiW59b6BXajLHJEhoh3qsfaaes36AmnJN6Gm2dQNLb-T3QSV6D61lolbXYuluav5DVx9G6JgTmupHH6HDYOdjkGHFHk6ZGLJPMb6Wfom3cQxG4~PxQ5sFVnbfuY5FmtwEZ6Zhi5YjCv14eGGpormNY9F5g__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "7",
+        "fields": {
+            "product_name": "Stainless Steel Eco Bottle",
+            "price": "200.00",
+            "stock": 90,
+            "category": "Long-Life Eco",
+            "is_new_release": true,
+            "is_trending": true,
+            "rating": "5",
+            "description": "Insulated stainless steel water bottle",
+            "detail": "Double-walled, keeps drinks hot or cold for hours",
+            "eco_point": "100",
+            "img_url": "https://media-hosting.imagekit.io/e2804b4eebc14379/Stainless%20Steel%20Eco%20Bottle.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WMt7Mw413Pk5ZgpnaMoB9cTnu6oxRfOFrmKkSSZmwOcSn2P~vJa4-8XdFwihOu3IOlWvvJ6tQ0LAIoOYbizwe0KEKN9sieWTbVSPmuczmomnyYgzST12h3CdQSh4j7tn40AYnc7Pwb7fNoJRhH582~thTDLCmWca0Udrkn-9j6F7SiVB670k3XHwLSsPBT2Zz6yZI542jqg037hrCPmiIWtqjGd94TRmokz~nQuBwFtlwlnFXgScLf-BwZF1FZPUlpU9ueiy-PrfYOQBMihBjmnU2BrdYgu8RyRxnXk2y9KRSGYzCxLHqjJuC0qAljbpm3aqyo79dnZljZmrs73tfg__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "8",
+        "fields": {
+            "product_name": "Bamboo Thermos Flask",
+            "price": "180.00",
+            "stock": 75,
+            "category": "Long-Life Eco",
+            "is_new_release": false,
+            "is_trending": true,
+            "rating": "4",
+            "description": "Thermos flask with bamboo outer shell",
+            "detail": "Vacuum insulated, eco-friendly bamboo finish",
+            "eco_point": "100",
+            "img_url": "https://media-hosting.imagekit.io/3919a8d2380a46df/Bamboo%20Thermos%20Flask.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=c~Ss89cCq4XtnbuFMIs6XA9gUnAB22hftDwdYNoqk-BT76KSlMPk1jZIRiXpywNeSbLRnDS3C7WfAXHExec3mkrf-uhnUwTkyHVmPRir4tJh6WLu8rn5xx3I~xbmL9jV5UjqTBuLEBrxfNF-jSU5XjRwoFCQHgb0X1LFs2A8HPsuGJ55nTTLJkjzcoijXzU5BSBmZZZnckWUoyDdX1APHr~b3RDq0JYoYPsOX~ZAE9pewtWIOlyFqau0eIU0hHtX8t49wbAYc9yy0cRZSxEfWyrT4c-6~JSNLEasXnNse0tbouQ8IJQOFfhaFC2k57e239W0EdHnHi3yVdWWMY2lqQ__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "9",
+        "fields": {
+            "product_name": "Biodegradable Paper Cup (Set of 10)",
+            "price": "25.00",
+            "stock": 320,
+            "category": "One-Time Eco",
+            "is_new_release": true,
+            "is_trending": false,
+            "rating": "3",
+            "description": "Disposable paper cups that biodegrade",
+            "detail": "Pack of 10 cups; safe for hot and cold beverages",
+            "eco_point": "10",
+            "img_url": "https://media-hosting.imagekit.io/ccd3b5103c3349c3/Biodegradable%20Paper%20Cup.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=cbVnk-pdXLUDNyWaqI8ePkjNCGRivM9nvDnSHYnPANRZ0blPRnAd7UrDrrn4AFQGuh3JfgN9acKt9uvL8RfcbhYulWOqhQ1OJjKYR2L-3aWQDfvvVuyiBSAkU6qk2YpKhyNoOj2SrHO8s~NwLTX6ohI5O62716ee8NhbBCyBeq2SEs5Rt40JyMcynr-PKkwOCl5HeXdWD4-vDE9GmeK0xik~pQkmA3GGkyCTta9on6igii8VN67G2WIKrJEV9orKF7kjc9jPy9rkrOcr2kVVARAKO7tODrvJ~Bb36WbP9ajmzMn-oEQL2v9CsuOiSD7MwzqwcizZszCOkNLPHREw9Q__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "10",
+        "fields": {
+            "product_name": "Plant-Based Trash Bags",
+            "price": "60.00",
+            "stock": 220,
+            "category": "One-Time Eco",
+            "is_new_release": false,
+            "is_trending": true,
+            "rating": "4",
+            "description": "Compostable trash bags made from plant materials",
+            "detail": "10 bags per pack; strong and leak-resistant",
+            "eco_point": "10",
+            "img_url": "https://media-hosting.imagekit.io/99120f6a880a4ba2/Plant-Based%20Trash%20Bags.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=TXfmsX~Tr8cXp~mIJ-S5Fzy3KpVrgZ6kPC~M9Nqn5SRLbLMwbwIzgiBkAdKJiIVhU7PNR68JQkuwTK5YvO2z8~1b9Pj82gJDVfUP~PqjBMcmm~eWcEp98dB8RWnDgpQpOV8br4ozrkzH9wdPfhhunR9tnG~EmZ7z5YEHunUP8zSEcIr2SuOMpK5uHmp5nNk8tOSGbsVA5Hn-onpJ2Xs1UDpDPzJC8Zlp~wFqWWv8CLhcxQTCmCQCHJvwSd2bINOJwbLP2uVar3GqjSRgw0aVXNuIBR~fJE6eXrYUErzCk3~CVQoiQp2Xzu0hskghCGP0yQQPOwKtEN2poYBP852MHg__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "11",
+        "fields": {
+            "product_name": "Natural Beeswax Candle",
+            "price": "120.00",
+            "stock": 140,
+            "category": "One-Time Eco",
+            "is_new_release": true,
+            "is_trending": true,
+            "rating": "5",
+            "description": "Pure beeswax candle with natural scent",
+            "detail": "Burns cleanly without chemicals; 8-hour burn time",
+            "eco_point": "10",
+            "img_url": "https://media-hosting.imagekit.io/c8079bdfe3014ac5/Natural%20Beeswax%20Candle.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=uloiEY2w7J8~K2YKNE7yQH0frK13M4DM6~bLRdFgTLSj55pRape9jlm-TSjRGVxDrtMO1DKBvJcXvoQhmPhEuf6g4tEBg9QrdNWvoxLksiRXckbRAClWPlhCW39w8Mj3O6Wm73lF6AfNnz2KL8ohboFrPH3JWGlBM-Yew5mOWSAncfI3lCjTFTFzoT7NdvH5tcV6~HBTqTld1vg2p~GlnRV~VNzfCiXbx1gIv9thehJnt-3ZmYNiDF42n0lRwe7k2ASvIr6p2T-H7R4ZNaIKFdq1UVN~T1kgjOVxI-3C~r7AlotPMg1kB94MXO6ks0p8z0gZ23TIierQSYSSjW7zKQ__"
+        }
+    },
+    {
+        "model": "product_management.product",
+        "pk": "12",
+        "fields": {
+            "product_name": "Recycled Paper Notebook",
+            "price": "90.00",
+            "stock": 160,
+            "category": "Long-Life Eco",
+            "is_new_release": false,
+            "is_trending": false,
+            "rating": "4",
+            "description": "Notebook made from 100% recycled paper",
+            "detail": "80 pages, sturdy cover, acid-free paper",
+            "eco_point": "100",
+            "img_url": "https://media-hosting.imagekit.io/ff9aad949480402d/Recycled%20Paper%20Notebook.png?Expires=1841839382&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=C-dF13b2Yq6eW7ZyKflKjqF-OMyhdsAbN4ko-yAUOSC9CZK7EpxfvgnRqvCfACBoUgEbQw72KeV-H1kZflF1C~uq2pZR8Y0Wie-DT6UarcSozRNGq5oK4lxSQgkAaWoDei5yD-rjQPdEaHjPBOwgnzB9VvCgvnYmG0itrcScDX4gKE4jv2cb1vNZUa9nB-IrHTNGB5EYkSsYnAOQZOY-Gr4c~~-tWYO-qvRFS6VDJXZDz47rVe-TKzJQDiAIDgq0tkSL1ja-iKiT8HAw--o3lc-nJjFw2uizM0v7Ju6S3sEyRu6u3boSkqw1EiwCRGip2RrkS8yjw6TIx1dw~sB6tg__"
+        }
+    }
+]

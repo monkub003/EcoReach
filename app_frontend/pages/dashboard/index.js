@@ -159,7 +159,7 @@ export default function Dashboard() {
 
   return (
     <>
-      <div className="bg-white min-h-screen">
+      <div className="bg-white min-h-screen text-gray-800">
       <Head>
         <title>Dashboard - EcoReach</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -323,7 +323,7 @@ export default function Dashboard() {
             <h2 className="text-lg font-semibold text-gray-800 mb-4">Latest Orders</h2>
             <div className="overflow-y-auto" style={{ maxHeight: "360px" }}>
               <table className="min-w-full border-collapse">
-                <thead className="border-b border-gray-300">
+                <thead className="border-b border-gray-300 text-gray-800">
                   <tr>
                     <th className="text-left py-2">Product</th>
                     <th className="text-left py-2">Date</th>
@@ -333,7 +333,7 @@ export default function Dashboard() {
                 </thead>
                 <tbody>
                   {dashboardData.latest_orders.map((order, index) => (
-                    <tr key={index} className="border-b border-gray-100">
+                    <tr key={index} className="border-b border-gray-100 text-gray-800">
                       <td className="py-2">{order.name}</td>
                       <td className="py-2">{formatDate(order.date)}</td>
                       <td className="py-2">{order.time}</td>
