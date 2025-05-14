@@ -5,7 +5,6 @@ from rest_framework.permissions import IsAuthenticated
 from django.db import transaction
 from .models import Order, OrderItem
 from .serializers import OrderSerializer, OrderItemSerializer
-from cart_management.models import Cart
 from product_management.models import Product
 from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView

@@ -159,6 +159,7 @@ export default function Dashboard() {
 
   return (
     <>
+      <div className="bg-white min-h-screen">
       <Head>
         <title>Dashboard - EcoReach</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -345,6 +346,7 @@ export default function Dashboard() {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 }

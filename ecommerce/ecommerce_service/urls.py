@@ -17,7 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from product_management.views import ProductAllView, ProductByIdView, SummarizeView
-from cart_management.views import CartViewSet
 from rest_framework.routers import DefaultRouter
 from order_management.views import OrderViewSet, OrderProductDetails
 from user_management.views import CustomerUserView, CustomerUserProfileView, RegisterView, LoginView, AddToWishlistView, RemoveFromWishlistView, WishlistView
