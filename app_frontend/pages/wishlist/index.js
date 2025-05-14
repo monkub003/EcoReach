@@ -53,7 +53,7 @@ export default function Wishlist() {
           throw new Error('No authentication token found');
         }
         
-        const response = await fetch('http://localhost:3344/wishlist/', {
+        const response = await fetch('https://ecoreachdb-frontend.onrender.com/wishlist/', {
           headers: {
             'Authorization': `Bearer ${jwtToken}`,
             'Content-Type': 'application/json'

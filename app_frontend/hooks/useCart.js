@@ -9,7 +9,7 @@ export function useCart() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_URL = 'http://127.0.0.1:3344/api';
+  const API_URL = 'https://ecoreachdb-frontend.onrender.com/api';
 
   // Helper function to make authenticated API requests
   const fetchWithAuth = async (url, options = {}) => {

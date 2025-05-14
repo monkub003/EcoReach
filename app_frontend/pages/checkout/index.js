@@ -85,7 +85,7 @@ export default function CheckoutForm() {
     e.preventDefault();
     const token = localStorage.getItem('jwt_access');
 
-    const response = await fetch('http://127.0.0.1:3344/api/orders/checkout/', {
+    const response = await fetch('https://ecoreachdb-frontend.onrender.com/api/orders/checkout/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
