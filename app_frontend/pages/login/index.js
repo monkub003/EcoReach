@@ -122,7 +122,7 @@ export default function Login() {
             </form>
             
             <p className="text-center mt-4 text-sm">
-              don't have account yet?,{' '}
+              Don&apos;t have an account yet?,{' '}
               <Link href="/register" className="underline text-emerald-600 hover:text-emerald-200">
                 register
               </Link>

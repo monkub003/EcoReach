@@ -11,7 +11,7 @@ export default function Logout() {
     localStorage.removeItem('jwt_access');
 
     router.push('/home');
-  }, [router]);
+  }, [clearCart]);
 
 
   return null; // No UI

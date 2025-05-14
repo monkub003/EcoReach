@@ -282,7 +282,7 @@ const checkWishlistStatus = async (productId) => {
       <nav className="bg-white shadow-sm">
         <div className="max-w-screen-2xl mx-auto flex justify-center space-x-2 py-1.5">
           {['ALL', 'Eco Tableware', 'Sustainable Bags'].map((category) => (
-            <a className="px-4 py-1 rounded text-sm bg-white text-green-900 border border-green-900">
+            <a key={category} className="px-4 py-1 rounded text-sm bg-white text-green-900 border border-green-900">
               {category}
             </a>
           ))}

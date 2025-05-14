@@ -1,6 +1,7 @@
 // pages/index.js
 import Head from 'next/head'
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
         </div>
       </div>
       <div className="relative z-10 gradient-border mt-56 animate-fade-in">
-        <a href="/login" className="text-center inline-block bg-emerald-800 px-8 py-2 text-white rounded-full font-semibold w-56 transition-colors hover:bg-emerald-900">
+        <Link href="/login/" className="text-center inline-block bg-emerald-800 px-8 py-2 text-white rounded-full font-semibold w-56 transition-colors hover:bg-emerald-900">
           Get Started
-        </a>
+        </Link>
       </div>
       <style jsx global>{`
         .gradient-text {
