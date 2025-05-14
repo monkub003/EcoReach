@@ -9,7 +9,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from rest_framework import status
-from django.contrib.auth.hashers import check_password
+from django.contrib.auth import authenticate
 import jwt
 import datetime
 from django.conf import settings
@@ -45,16 +45,10 @@ class LoginView(APIView):
             username = serializer.validated_data['username']
             password = serializer.validated_data['password']
             
-            try:
-                user = CustomerUser.objects.get(username=username)
-            except CustomerUser.DoesNotExist:
-                return Response(
-                    {"error": "Invalid credentials"},
-                    status=status.HTTP_401_UNAUTHORIZED
-                )
+            # Use Django's authenticate function
+            user = authenticate(username=username, password=password)
             
-            # Verify password
-            if not check_password(password, user.password):
+            if user is None:
                 return Response(
                     {"error": "Invalid credentials"},
                     status=status.HTTP_401_UNAUTHORIZED

@@ -29,27 +29,15 @@ class CustomerUserRegistrationSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         # Remove confirm_password from validated data
         validated_data.pop('confirm_password')
+        password = validated_data.pop('password')
         
-        # Create user instance
-        user = CustomerUser.objects.create(
-            username=validated_data['username'],
-            email=validated_data['email'],
-            first_name=validated_data['first_name'],
-            last_name=validated_data['last_name'],
-            phone_number=validated_data['phone_number']
+        # Create user using create_user method
+        user = CustomerUser.objects.create_user(
+            password=password,
+            **validated_data
         )
         
-        # Set password with hashing
-        user.password = self._hash_password(validated_data['password'])
-        user.save()
-        
         return user
-    
-    def _hash_password(self, password):
-        # In a real implementation, you should use Django's password hasher
-        # For this example, we'll use make_password
-        from django.contrib.auth.hashers import make_password
-        return make_password(password)
 
 class CustomerUserLoginSerializer(serializers.Serializer):
     username = serializers.CharField()
