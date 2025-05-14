@@ -36,7 +36,7 @@ export default function HomePage() {
       setError(null);
       
       // Add a timeout to the fetch request
-      const fetchPromise = fetch('http://127.0.0.1:3344/api/product/all');
+      const fetchPromise = fetch('https://ecoreachdb-api.onrender.com/api/product/all');
       const timeoutPromise = new Promise((_, reject) => 
         setTimeout(() => reject(new Error('Request timed out')), 5000)
       );
