@@ -3,7 +3,11 @@ services:
     name: ecoreachdb-api
     env: python
     buildCommand: cd ecommerce && pip install -r requirements.txt
-    startCommand: cd ecommerce && python manage.py migrate && python manage.py runserver 0.0.0.0:$PORT
+    startCommand: >
+      cd ecommerce &&
+      python manage.py migrate &&
+      python manage.py loaddata products.json users.json &&
+      gunicorn ecommerce_service.wsgi:application --bind 0.0.0.0:$PORT
     envVars:
       - key: DATABASE_URL
         fromDatabase:
