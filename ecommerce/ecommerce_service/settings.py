@@ -35,7 +35,18 @@ else:
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = DEBUG  # Allow all origins in development
-CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',') if not DEBUG else []
+if DEBUG:
+    CORS_ALLOWED_ORIGINS = []  # Not used in development since CORS_ALLOW_ALL_ORIGINS is True
+else:
+    # In production, use specific origins
+    default_origins = [
+        f"https://{RENDER_EXTERNAL_HOSTNAME}",
+        "https://ecoreachapp.onrender.com",  # Add your frontend URL here
+    ]
+    # Add any additional origins from environment variable
+    extra_origins = [origin.strip() for origin in os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',') if origin.strip()]
+    CORS_ALLOWED_ORIGINS = default_origins + extra_origins
+
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = [
     'DELETE',
